@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="article-wrapper">
+    <article>
+        <!--{% include article-header.html page=page link=false share=page.share %}-->
+        <section class="post-content">
+            {{ content }}
+        </section>
+		<ul class="pager">
+			<li><a href="#">Previous</a></li>
+			<li><a href="#">Next</a></li>
+		</ul>
+        <!--{% include article-footer.html page=page share=page.share %}-->
+    </article>
+</div>
+
+<!--{% if site.disqus %}
+<section class="comments">
+    {% include disqus.html %}
+</section>
+{% endif %}-->

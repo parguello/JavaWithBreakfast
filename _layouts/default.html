@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaWithBreakfast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{site.baseurl}}css/common.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<div class="container">
+	<div class="jumbotron">
+		<h1>JavaWithBreakfast&nbsp&nbsp<img src="{{site.baseurl}}/images/mug.png" alt="coffee" style="width:50px;height:50px;"></h1> 
+		<p>The blog to learn java while having breakfast: java, certifications, code and more</p> 
+		<p>
+			<button type="button" class="btn btn-link">
+				<img src="{{site.baseurl}}/images/github-icon.ico" alt="github" style="width:32px;height:32px;">
+			</button>
+			<button type="button" class="btn btn-link">
+				<img src="{{site.baseurl}}/images/google-plus-icon.ico" alt="googleplus" style="width:32px;height:32px;">
+			</button>
+			<button type="button" class="btn btn-link">
+				<img src="{{site.baseurl}}/images/facebook-icon.ico" alt="facebook" style="width:32px;height:32px;">
+			</button>
+		</p>
+	</div>
+	
+  {% include nav.html %}
+  {% include aside.html %}
+  <section>
+  {{content}}
+  </section>
+  {% include footer.html %}
+  </div>
+  </body>
+</html>
+

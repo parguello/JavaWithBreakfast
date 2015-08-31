@@ -1,3 +1,10 @@
 markdown: redcarpet
 baseurl: /JavaWithBreakfast
 exclude: ['README.md']
+#icon
+github: 
+googleplus: 
+facebook: 
+#
+paginate: 7
+paginate_path: "/blog/page:num/"

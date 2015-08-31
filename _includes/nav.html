@@ -1,0 +1,34 @@
+  <!--<nav>
+   <ul>
+	<li><a href="{{site.baseurl}}/index.html">home</a></li>
+	<li><a href="{{site.baseurl}}/news.html">news</a></li>
+   </ul>
+  </nav>-->
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   <!-- <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+	-->
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+        <li><a href="{{site.baseurl}}/tags.html">Tags</a></li> 
+        <li><a href="{{site.baseurl}}/archives.html">Archives</a></li> 
+		<li><a href="{{site.baseurl}}/about.html">About</a></li> 
+      </ul>
+    </div>
+  </div>
+    <!--<script type="text/javascript">
+$('.nav li a').on('click', function() {
+    $(this).parent().parent().find('.active').removeClass('active');
+    $(this).parent().addClass('active').css('font-weight', 'bold');
+});
+</script>-->
+<script>
+    $(document).ready(function() {
+        $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    });
+</script>
+</nav>
