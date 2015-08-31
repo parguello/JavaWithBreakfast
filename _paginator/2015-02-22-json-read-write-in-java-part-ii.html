@@ -1,0 +1,23 @@
+---
+title: "JSON Read & Write with Java (part II)"
+layout: "post"
+permalink: "/2015/02/json-read-write-in-java-part-ii.html"
+uuid: "1826679961633064286"
+guid: "tag:blogger.com,1999:blog-1318933819495649597.post-1826679961633064286"
+date: "2015-02-22 20:20:00"
+updated: "2015-03-09 19:00:20"
+description: 
+blogger:
+    siteid: "1318933819495649597"
+    postid: "1826679961633064286"
+    comments: "0"
+categories: [JSON]
+author: 
+    name: "Patricia Arguello"
+    url: "https://plus.google.com/104204871599189383036?rel=author"
+    image: "//lh3.googleusercontent.com/-VnywQdHnD-s/AAAAAAAAAAI/AAAAAAAAAMU/YbM3CsE6nCI/s32-c/photo.jpg"
+---
+
+<div class="css-full-post-content js-full-post-content">
+<span style="font-family: Verdana, sans-serif;">There are 2 API to perform JSON processing:</span><br /><br /><ul><li><span style="font-family: Verdana, sans-serif;">Object model ( JsonReader/JsonWritter)</span></li><li><span style="font-family: Verdana, sans-serif;">Streaming (JsonParser/ JsonGenerator)</span></li></ul><br /><span style="font-family: Verdana, sans-serif;">In the previous post we reviewed the use of JSON processing using object model : create objects with JsonBuilder, and I/O actions with JsonReader and JsonWritter.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Today, we will take a look to the other alternative of processing JSON with JsonParse and JsonGenerator.</span><br /><br /><span style="font-family: Verdana, sans-serif;">Remember that working with Json processing requires to import the package javax.json.* (Available if we are working with Java7 enterprise edition).&nbsp;</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;"><b>Write with JsonGenerator</b></span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><script src="https://gist.github.com/parguello/db0b634de5a140a45efa.js"></script><span style="font-family: Verdana, sans-serif;">The output will be:</span><br /><span style="font-family: Courier New, Courier, monospace;">{"type":"cheeseburguer","drink":"coke","sides":["chips","salad"]}</span><br /><span style="font-family: Courier New, Courier, monospace;"><br /></span><span style="font-family: Verdana, sans-serif;"><b>Read with JsonParse</b></span><br /><br /><script src="https://gist.github.com/parguello/f398f7645e699b163781.js"></script><span style="font-family: Verdana, sans-serif;">The output will be:</span><br /><span style="font-family: Courier New, Courier, monospace;">type</span><br /><span style="font-family: Courier New, Courier, monospace;">cheeseburguer</span><br /><span style="font-family: Courier New, Courier, monospace;">drink</span><br /><span style="font-family: Courier New, Courier, monospace;">coke</span><br /><span style="font-family: Courier New, Courier, monospace;">sides</span><br /><span style="font-family: Courier New, Courier, monospace;">chips</span><br /><span style="font-family: Courier New, Courier, monospace;">salad</span><br /><span style="font-family: Courier New, Courier, monospace;"><br /></span><span style="font-family: Courier New, Courier, monospace;"><br /></span><span style="font-family: Courier New, Courier, monospace;"><br /></span>
+</div>
